@@ -733,10 +733,22 @@
             margin-bottom: 24px; box-shadow: 0 4px 15px rgba(245, 158, 11, 0.15);
             animation: badge-pulse 2s infinite;
         }
+        .pricing-badge-v2.blue {
+            background: linear-gradient(135deg, rgba(42,171,238,0.2), rgba(124,58,237,0.15));
+            border-color: rgba(42,171,238,0.3);
+            color: #2AABEE;
+            box-shadow: 0 4px 15px rgba(42,171,238,0.15);
+            animation: badge-pulse-blue 2s infinite;
+        }
         @keyframes badge-pulse {
             0% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4); }
             70% { box-shadow: 0 0 0 10px rgba(245, 158, 11, 0); }
             100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+        }
+        @keyframes badge-pulse-blue {
+            0% { box-shadow: 0 0 0 0 rgba(42, 171, 238, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(42, 171, 238, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(42, 171, 238, 0); }
         }
         .card-shine {
             position: absolute; top: 0; left: -100%; width: 50%; height: 100%;
@@ -851,6 +863,15 @@
             border: 1px solid var(--border);
         }
         .btn-pricing-v2.ghost:hover { border-color: var(--border-hover); transform: translateY(-2px); }
+        .btn-pricing-v2.blue-glow {
+            background: linear-gradient(135deg, #2AABEE, #7C3AED);
+            color: white;
+            box-shadow: 0 0 20px rgba(42, 171, 238, 0.4);
+        }
+        .btn-pricing-v2.blue-glow:hover {
+            box-shadow: 0 0 40px rgba(42, 171, 238, 0.6), 0 8px 32px rgba(42, 171, 238, 0.25);
+            transform: translateY(-2px);
+        }
 
         /* ======================== REFERRAL ======================== */
         .referral-block {
@@ -1456,7 +1477,7 @@
             </div>
             <div class="pricing-card reveal d2">
                 <div class="card-shine" style="animation-delay: 3s;"></div>
-                <div class="pricing-badge-v2" style="visibility: hidden; pointer-events: none; user-select: none;" aria-hidden="true">🔥 Промокод «ZAVOD38»</div>
+                <div class="pricing-badge-v2 blue">⚡ БЕЗ ОГРАНИЧЕНИЙ</div>
                 <div class="plan-name">План МАХ</div>
                 <div class="plan-desc">Полный доступ ко всем возможностям</div>
                 <div class="price-row">
@@ -1477,7 +1498,7 @@
                     <li><span class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg></span> Аналитика и статистика</li>
                     <li><span class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg></span> Техническая поддержка</li>
                 </ul>
-                <a href="https://t.me/posterlite_bot" class="btn-pricing-v2 ghost" target="_blank">Подключить</a>
+                <a href="https://t.me/posterlite_bot" class="btn-pricing-v2 blue-glow" target="_blank">Подключить План МАХ</a>
             </div>
         </div>
         <p style="text-align: center; color: var(--text-muted); font-size: 0.95rem; margin-top: 32px; max-width: 600px; margin-left: auto; margin-right: auto;" class="reveal">
